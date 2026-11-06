@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
+  <style>
+    .team-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+  </style>
 </head>
 <body>
 
@@ -40,78 +43,53 @@
     </div>
 
     <div class="container">
+      <!-- Para añadir a alguien, copia un bloque <div class="member card">. -->
       <section>
         <h2>Principal investigators</h2>
         <div class="team-grid">
-          <!-- Copia este bloque <div class="member"> para cada persona.
-               Pon las fotos en la carpeta images/ (cuadradas, ~400x400 px). -->
-          <div class="member">
-            <img class="photo" src="images/person1.jpg" alt="Name Surname">
-            <h3>Name Surname</h3>
+          <div class="member card">
+            <h3>Jonas Radl</h3>
             <p class="role">Principal Investigator</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:name@example.com">Email</a>
-              <a href="https://scholar.google.com/">Scholar</a>
-              <a href="https://orcid.org/">ORCID</a>
+              <a href="mailto:jonas.radl@uc3m.es">jonas.radl@uc3m.es</a>
             </div>
           </div>
 
-          <div class="member">
-            <img class="photo" src="images/person2.jpg" alt="Name Surname">
-            <h3>Name Surname</h3>
-            <p class="role">Co-Principal Investigator</p>
-            <p class="affil">Institution</p>
+          <div class="member card">
+            <h3>Warn Lekfuangfu</h3>
+            <p class="role">Principal Investigator</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:name@example.com">Email</a>
-              <a href="https://scholar.google.com/">Scholar</a>
+              <a href="mailto:nlekfuan@eco.uc3m.es">nlekfuan@eco.uc3m.es</a>
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h2>Researchers</h2>
+        <h2>Research team</h2>
         <div class="team-grid">
-          <div class="member">
-            <img class="photo" src="images/person3.jpg" alt="Name Surname">
-            <h3>Name Surname</h3>
-            <p class="role">Postdoctoral Researcher</p>
-            <p class="affil">Institution</p>
+          <div class="member card">
+            <h3>Alicia García-Sierra</h3>
+            <p class="role">Research Team Member</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:name@example.com">Email</a>
-              <a href="https://www.linkedin.com/">LinkedIn</a>
-            </div>
-          </div>
-
-          <div class="member">
-            <img class="photo" src="images/person4.jpg" alt="Name Surname">
-            <h3>Name Surname</h3>
-            <p class="role">PhD Student</p>
-            <p class="affil">Institution</p>
-            <div class="links">
-              <a href="mailto:name@example.com">Email</a>
-            </div>
-          </div>
-
-          <div class="member">
-            <img class="photo" src="images/person5.jpg" alt="Name Surname">
-            <h3>Name Surname</h3>
-            <p class="role">Research Assistant</p>
-            <p class="affil">Institution</p>
-            <div class="links">
-              <a href="mailto:name@example.com">Email</a>
+              <a href="mailto:aligarci@clio.uc3m.es">aligarci@clio.uc3m.es</a>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Opcional: colaboradores externos -->
-      <section>
-        <h2>Collaborators</h2>
-        <p class="muted">
-          Name Surname (Institution) · Name Surname (Institution) · Name Surname (Institution)
-        </p>
+        <div class="team-grid">
+          <div class="member card">
+            <h3>Julia Polgar</h3>
+            <p class="role">Research Assistant</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
+            <div class="links">
+              <a href="mailto:jpolgar@clio.uc3m.es">jpolgar@clio.uc3m.es</a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
