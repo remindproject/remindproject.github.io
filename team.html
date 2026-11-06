@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Name · Team members</title>
+  <meta name="description" content="The people behind Project Name.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="">
+        <span>Project Name</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">About the project</a></li>
+          <li><a href="team.html">Team members</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Team members</h1>
+        <p>The people working on the project.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section>
+        <h2>Principal investigators</h2>
+        <div class="team-grid">
+          <!-- Copia este bloque <div class="member"> para cada persona.
+               Pon las fotos en la carpeta images/ (cuadradas, ~400x400 px). -->
+          <div class="member">
+            <img class="photo" src="images/person1.jpg" alt="Name Surname">
+            <h3>Name Surname</h3>
+            <p class="role">Principal Investigator</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
+            <div class="links">
+              <a href="mailto:name@example.com">Email</a>
+              <a href="https://scholar.google.com/">Scholar</a>
+              <a href="https://orcid.org/">ORCID</a>
+            </div>
+          </div>
+
+          <div class="member">
+            <img class="photo" src="images/person2.jpg" alt="Name Surname">
+            <h3>Name Surname</h3>
+            <p class="role">Co-Principal Investigator</p>
+            <p class="affil">Institution</p>
+            <div class="links">
+              <a href="mailto:name@example.com">Email</a>
+              <a href="https://scholar.google.com/">Scholar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Researchers</h2>
+        <div class="team-grid">
+          <div class="member">
+            <img class="photo" src="images/person3.jpg" alt="Name Surname">
+            <h3>Name Surname</h3>
+            <p class="role">Postdoctoral Researcher</p>
+            <p class="affil">Institution</p>
+            <div class="links">
+              <a href="mailto:name@example.com">Email</a>
+              <a href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="member">
+            <img class="photo" src="images/person4.jpg" alt="Name Surname">
+            <h3>Name Surname</h3>
+            <p class="role">PhD Student</p>
+            <p class="affil">Institution</p>
+            <div class="links">
+              <a href="mailto:name@example.com">Email</a>
+            </div>
+          </div>
+
+          <div class="member">
+            <img class="photo" src="images/person5.jpg" alt="Name Surname">
+            <h3>Name Surname</h3>
+            <p class="role">Research Assistant</p>
+            <p class="affil">Institution</p>
+            <div class="links">
+              <a href="mailto:name@example.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Opcional: colaboradores externos -->
+      <section>
+        <h2>Collaborators</h2>
+        <p class="muted">
+          Name Surname (Institution) · Name Surname (Institution) · Name Surname (Institution)
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span class="year"></span> Project Name</span>
+      <span><a href="mailto:contact@example.com">contact@example.com</a></span>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

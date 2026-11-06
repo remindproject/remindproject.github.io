@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Name · Publications</title>
+  <meta name="description" content="Publications of Project Name.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="">
+        <span>Project Name</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">About the project</a></li>
+          <li><a href="team.html">Team members</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Publications</h1>
+        <p>Articles, conference papers and other outputs of the project.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section>
+        <!-- Agrupa por año. Para cada publicación copia un bloque <li class="pub">.
+             Cada BibTeX necesita un id distinto (bib1, bib2, ...). -->
+
+        <h2 class="pub-year">2026</h2>
+        <ul class="pub-list">
+          <li class="pub">
+            <p class="title">Title of the first paper of the project</p>
+            <p class="authors"><strong>Surname, N.</strong>, Surname, N., &amp; Surname, N.</p>
+            <p class="venue">Journal Name, 12(3), 45–67.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.0000/xxxx">DOI</a>
+              <a href="papers/paper1.pdf">PDF</a>
+              <a href="https://github.com/">Code</a>
+              <button data-bibtex="bib1">BibTeX</button>
+            </div>
+<pre class="bibtex" id="bib1">@article{surname2026first,
+  title   = {Title of the first paper of the project},
+  author  = {Surname, Name and Surname, Name and Surname, Name},
+  journal = {Journal Name},
+  volume  = {12},
+  number  = {3},
+  pages   = {45--67},
+  year    = {2026}
+}</pre>
+          </li>
+
+          <li class="pub">
+            <p class="title">Title of a conference paper</p>
+            <p class="authors">Surname, N., <strong>Surname, N.</strong></p>
+            <p class="venue">Proceedings of Conference 2026, City.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/">arXiv</a>
+              <button data-bibtex="bib2">BibTeX</button>
+            </div>
+<pre class="bibtex" id="bib2">@inproceedings{surname2026conf,
+  title     = {Title of a conference paper},
+  author    = {Surname, Name and Surname, Name},
+  booktitle = {Proceedings of Conference 2026},
+  year      = {2026}
+}</pre>
+          </li>
+        </ul>
+
+        <h2 class="pub-year">Working papers</h2>
+        <ul class="pub-list">
+          <li class="pub">
+            <p class="title">Title of a working paper or preprint</p>
+            <p class="authors">Surname, N., Surname, N.</p>
+            <p class="venue">Under review.</p>
+            <div class="pub-links">
+              <a href="papers/draft.pdf">PDF</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span class="year"></span> Project Name</span>
+      <span><a href="mailto:contact@example.com">contact@example.com</a></span>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
