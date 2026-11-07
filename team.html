@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="site.css">
   <style>
     .team-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+    /* Foto circular con borde blanco para que se vea sobre el fondo verde de la tarjeta */
+    .member.card .photo {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      object-position: 50% 25%;
+      border: 4px solid #ffffff;
+    }
   </style>
 </head>
 <body>
@@ -43,11 +51,12 @@
     </div>
 
     <div class="container">
-      <!-- Para añadir a alguien, copia un bloque <div class="member card">. -->
+      <!-- Para añadir a alguien, copia un bloque <div class="member card"> y cambia la foto (src), el nombre y el correo. -->
       <section>
         <h2>Principal investigators</h2>
         <div class="team-grid">
           <div class="member card">
+            <img class="photo" src="images/jonas_foto.jpg" alt="Jonas Radl" loading="lazy">
             <h3>Jonas Radl</h3>
             <p class="role">Principal Investigator</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
@@ -57,6 +66,7 @@
           </div>
 
           <div class="member card">
+            <img class="photo" src="images/warn_foto.jpg" alt="Warn Lekfuangfu" loading="lazy">
             <h3>Warn Lekfuangfu</h3>
             <p class="role">Principal Investigator</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
@@ -71,6 +81,7 @@
         <h2>Research team</h2>
         <div class="team-grid">
           <div class="member card">
+            <img class="photo" src="images/alicia_foto.jpg" alt="Alicia García-Sierra" loading="lazy">
             <h3>Alicia García-Sierra</h3>
             <p class="role">Research Team Member</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
@@ -80,6 +91,7 @@
           </div>
 
           <div class="member card">
+            <img class="photo" src="images/foto_polgar.jpg" alt="Julia Polgar Brovetto" loading="lazy">
             <h3>Julia Polgar Brovetto</h3>
             <p class="role">Research Team Member</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
@@ -94,7 +106,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© <span class="year"></span> Project Name</span>
+      <span>© <span class="year">2026</span> Returns to Effort and Growth Mindset</span>
       <span><a href="mailto:contact@example.com">contact@example.com</a></span>
     </div>
   </footer>
