@@ -20,6 +20,13 @@
       object-position: 50% 25%;
       border: 4px solid #ffffff;
     }
+    /* Foto y nombre son enlaces a la página personal */
+    .member .photo-link { display: block; width: max-content; margin: 0 auto 1rem; }
+    .member .photo-link .photo { margin: 0; }
+    .member h3 a { color: inherit; text-decoration: none; }
+    .member h3 a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+    .member .links { flex-wrap: wrap; }
+    .member .links a { font-weight: 600; }
   </style>
 </head>
 <body>
@@ -51,27 +58,33 @@
     </div>
 
     <div class="container">
-      <!-- Para añadir a alguien, copia un bloque <div class="member card"> y cambia la foto (src), el nombre y el correo. -->
+      <!-- Para añadir a alguien, copia un bloque <div class="member card"> y cambia la foto (src), el nombre, el enlace (href) y el correo. -->
       <section>
         <h2>Principal investigators</h2>
         <div class="team-grid">
           <div class="member card">
-            <img class="photo" src="images/jonas_foto.jpg" alt="Jonas Radl" loading="lazy">
-            <h3>Jonas Radl</h3>
+            <a class="photo-link" href="https://economia.uc3m.es/personal/jonas-radl/" target="_blank" rel="noopener">
+              <img class="photo" src="images/jonas_foto.jpg" alt="Jonas Radl" loading="lazy">
+            </a>
+            <h3><a href="https://economia.uc3m.es/personal/jonas-radl/" target="_blank" rel="noopener">Jonas Radl</a></h3>
             <p class="role">Principal Investigator</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:jonas.radl@uc3m.es">jonas.radl@uc3m.es</a>
+              <a href="mailto:jonas.radl@uc3m.es">Email</a>
+              <a href="https://economia.uc3m.es/personal/jonas-radl/" target="_blank" rel="noopener">Website ↗</a>
             </div>
           </div>
 
           <div class="member card">
-            <img class="photo" src="images/warn_foto.jpg" alt="Warn Lekfuangfu" loading="lazy">
-            <h3>Warn Lekfuangfu</h3>
+            <a class="photo-link" href="https://npwarn.wixsite.com/warn-lekfuangfu" target="_blank" rel="noopener">
+              <img class="photo" src="images/warn_foto.jpg" alt="Warn Lekfuangfu" loading="lazy">
+            </a>
+            <h3><a href="https://npwarn.wixsite.com/warn-lekfuangfu" target="_blank" rel="noopener">Warn Lekfuangfu</a></h3>
             <p class="role">Principal Investigator</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:nlekfuan@eco.uc3m.es">nlekfuan@eco.uc3m.es</a>
+              <a href="mailto:nlekfuan@eco.uc3m.es">Email</a>
+              <a href="https://npwarn.wixsite.com/warn-lekfuangfu" target="_blank" rel="noopener">Website ↗</a>
             </div>
           </div>
         </div>
@@ -81,22 +94,28 @@
         <h2>Research team</h2>
         <div class="team-grid">
           <div class="member card">
-            <img class="photo" src="images/alicia_foto.jpg" alt="Alicia García-Sierra" loading="lazy">
-            <h3>Alicia García-Sierra</h3>
+            <a class="photo-link" href="https://aliciagarciasierra.github.io/" target="_blank" rel="noopener">
+              <img class="photo" src="images/alicia_foto.jpg" alt="Alicia García-Sierra" loading="lazy">
+            </a>
+            <h3><a href="https://aliciagarciasierra.github.io/" target="_blank" rel="noopener">Alicia García-Sierra</a></h3>
             <p class="role">Research Team Member</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:aligarci@clio.uc3m.es">aligarci@clio.uc3m.es</a>
+              <a href="mailto:aligarci@clio.uc3m.es">Email</a>
+              <a href="https://aliciagarciasierra.github.io/" target="_blank" rel="noopener">Website ↗</a>
             </div>
           </div>
 
           <div class="member card">
-            <img class="photo" src="images/foto_polgar.jpg" alt="Julia Polgar Brovetto" loading="lazy">
-            <h3>Julia Polgar Brovetto</h3>
+            <a class="photo-link" href="https://www.linkedin.com/in/julia-polgar-brovetto-4a4a122b8/" target="_blank" rel="noopener">
+              <img class="photo" src="images/foto_polgar.jpg" alt="Julia Polgar Brovetto" loading="lazy">
+            </a>
+            <h3><a href="https://www.linkedin.com/in/julia-polgar-brovetto-4a4a122b8/" target="_blank" rel="noopener">Julia Polgar Brovetto</a></h3>
             <p class="role">Research Team Member</p>
             <p class="affil">Universidad Carlos III de Madrid</p>
             <div class="links">
-              <a href="mailto:jpolgar@clio.uc3m.es">jpolgar@clio.uc3m.es</a>
+              <a href="mailto:jpolgar@clio.uc3m.es">Email</a>
+              <a href="https://www.linkedin.com/in/julia-polgar-brovetto-4a4a122b8/" target="_blank" rel="noopener">LinkedIn ↗</a>
             </div>
           </div>
         </div>
