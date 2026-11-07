@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+Claude
+/
+1794055226149_image.png
+Este es mi codigo team. actualizalo para que se suban las fotos. <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Returns to Effort and Growth Mindset · News</title>
-  <meta name="description" content="Latest news from Returns to Effort and Growth Mindset, a research project hosted at Universidad Carlos III de Madrid (UC3M).">
+  <title>Returns to Effort and Growth Mindset · Team members</title>
+  <meta name="description" content="The people behind Returns to Effort and Growth Mindset, a research project hosted at Universidad Carlos III de Madrid (UC3M).">
   <link rel="icon" href="images/newlogo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
+  <style>
+    .team-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+  </style>
 </head>
 <body>
 
@@ -34,49 +40,57 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <h1>News</h1>
-        <p>Updates, events and milestones of the project.</p>
+        <h1>Team members</h1>
+        <p>The people working on the project.</p>
       </div>
     </div>
 
     <div class="container">
+      <!-- Para añadir a alguien, copia un bloque <div class="member card">. -->
       <section>
-        <!-- Añade cada noticia nueva ARRIBA del todo, copiando un bloque <li>.
-             Etiquetas sugeridas: Event, Paper, Talk, Award, Team. -->
-        <ul class="news-list">
-          <li class="news-item">
-            <time datetime="2026-11-01">1 Nov 2026</time>
-            <div>
-              <h3>Our website is live <span class="tag">Project</span></h3>
-              <p>We have launched the project website. Follow this page for updates.</p>
+        <h2>Principal investigators</h2>
+        <div class="team-grid">
+          <div class="member card">
+            <h3>Jonas Radl</h3>
+            <p class="role">Principal Investigator</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
+            <div class="links">
+              <a href="mailto:jonas.radl@uc3m.es">jonas.radl@uc3m.es</a>
             </div>
-          </li>
+          </div>
 
-          <li class="news-item">
-            <time datetime="2026-10-15">15 Oct 2026</time>
-            <div>
-              <h3>Paper accepted at Conference 2026 <span class="tag">Paper</span></h3>
-              <p>Short description of the paper and a link to it:
-                <a href="publications.html">see publications</a>.</p>
+          <div class="member card">
+            <h3>Warn Lekfuangfu</h3>
+            <p class="role">Principal Investigator</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
+            <div class="links">
+              <a href="mailto:nlekfuan@eco.uc3m.es">nlekfuan@eco.uc3m.es</a>
             </div>
-          </li>
+          </div>
+        </div>
+      </section>
 
-          <li class="news-item">
-            <time datetime="2026-09-20">20 Sep 2026</time>
-            <div>
-              <h3>Kick-off meeting <span class="tag">Event</span></h3>
-              <p>The team met in Madrid to launch the project and plan the first year.</p>
+      <section>
+        <h2>Research team</h2>
+        <div class="team-grid">
+          <div class="member card">
+            <h3>Alicia García-Sierra</h3>
+            <p class="role">Research Team Member</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
+            <div class="links">
+              <a href="mailto:aligarci@clio.uc3m.es">aligarci@clio.uc3m.es</a>
             </div>
-          </li>
+          </div>
 
-          <li class="news-item">
-            <time datetime="2026-09-01">1 Sep 2026</time>
-            <div>
-              <h3>New team member <span class="tag">Team</span></h3>
-              <p>We welcome Name Surname, who joins as a PhD student.</p>
+          <div class="member card">
+            <h3>Julia Polgar Brovetto</h3>
+            <p class="role">Research Team Member</p>
+            <p class="affil">Universidad Carlos III de Madrid</p>
+            <div class="links">
+              <a href="mailto:jpolgar@clio.uc3m.es">jpolgar@clio.uc3m.es</a>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
     </div>
   </main>
@@ -91,3 +105,135 @@
   <script src="site.js"></script>
 </body>
 </html>
+
+los archivos se llaman asi
+
+Creó un archivo, compartió un archivo
+Ya tienes el team.html actualizado. Cada tarjeta lleva ahora su foto, con los nombres de archivo exactamente como aparecen en tu captura:
+
+Persona	Archivo
+Jonas Radl	images/jonas_foto.jpg
+Warn Lekfuangfu	images/warn_foto.jpg
+Alicia García-Sierra	images/alicia_foto.jpg
+Julia Polgar Brovetto	images/foto_polgar.jpg
+Pasos
+
+En GitHub, entra en la carpeta images, pulsa Add file → Upload files, arrastra las cuatro fotos (.jpg) y haz Commit changes. El PDF de la memoria no hace falta subirlo; es mejor no publicarlo.
+Abre team.html, pulsa el lápiz, borra todo, pega el contenido nuevo y haz Commit changes.
+Espera uno o dos minutos y recarga sin caché (Ctrl+Shift+R).
+Cambios que hice
+
+Las fotos son circulares, de 170 px, con borde blanco para que destaquen sobre el verde de las tarjetas.
+El recorte está subido un poco para que no se corte la cara.
+Ajusté el pie de página: ahora pone el nombre del proyecto y el año, en lugar de “Project Name”.
+Comprobaciones
+
+Si alguna foto no aparece, revisa que el nombre en GitHub sea idéntico, minúsculas incluidas. Por ejemplo, foto_polgar.jpg no es lo mismo que Foto_Polgar.jpg, ni que foto_polgar.jpeg.
+Si alguna pesa más de 1 MB, conviene reducirla antes de subirla. Si no, la página tardará en cargar.
+Como el archivo anterior no incluía a los demás miembros de la memoria, solo salen estas cuatro personas. Si quieres añadir al resto, copia un bloque <div class="member card"> y cambia la foto, el nombre y el correo.
+
+Team
+Código
+·HTML
+mientras espero que carguen los cambios. Quiero que la seccion de news y publication no tenga nada de contendio, solo algo que diga "under construction" o algo asi, que tengoq ue hacer?
+
+Creó 2 archivos, compartió 2 archivos
+Te dejo los dos archivos listos: news.html y publications.html. Cada uno mantiene la cabecera y el pie del resto de la web, y en el centro muestra un cuadro con el degradado verde-lila, un icono 🚧 y el texto “Under construction. We’re still working on this page. Check back soon!”.
+
+No tenía el código anterior de esas dos páginas, así que los he escrito desde cero con la misma estructura que team.html. Todo el contenido que tuvieran antes desaparece.
+
+Qué tienes que hacer
+
+En GitHub, abre news.html, pulsa el lápiz (Edit), borra todo, pega el contenido nuevo y haz Commit changes.
+Haz lo mismo con publications.html.
+Espera uno o dos minutos y recarga sin caché (Ctrl+Shift+R).
+Los enlaces del menú (News y Publications) siguen funcionando. Además, el botón “Publications” de la portada seguirá llevando a esta página en construcción.
+
+Cuando quieras rellenarlas, dime qué noticias o publicaciones quieres poner y te preparo las versiones con contenido.
+
+News
+Código
+·HTML
+Publications
+Código
+·HTML
+¿Cómo está funcionando Claude en esta sesión?
+
+
+
+Claude es una IA y puede cometer errores.
+
+
+News · HTML
+Copiado
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Returns to Effort and Growth Mindset · News</title>
+  <meta name="description" content="News from Returns to Effort and Growth Mindset, a research project hosted at Universidad Carlos III de Madrid (UC3M).">
+  <link rel="icon" href="images/newlogo.png" type="image/png">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    .soon {
+      margin: clamp(2.5rem, 6vw, 4rem) 0;
+      padding: clamp(2.5rem, 7vw, 4.5rem) 1.5rem;
+      text-align: center;
+      background: var(--panel-bg);
+      border-radius: var(--radius);
+    }
+    .soon .icon { font-size: 2.4rem; margin-bottom: 0.8rem; }
+    .soon h2 { margin-bottom: 0.6rem; }
+    .soon h2::after { margin-inline: auto; }
+    .soon p { margin: 0 auto; max-width: 44ch; color: var(--ink-2); }
+  </style>
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/newlogo.png" alt="Project logo">
+        <span>Returns to Effort and Growth Mindset</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">About the project</a></li>
+          <li><a href="team.html">Team members</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>News</h1>
+      </div>
+    </div>
+ 
+    <div class="container">
+      <div class="soon">
+        <div class="icon">🚧</div>
+        <h2>Under construction</h2>
+        <p>We're still working on this page. Check back soon!</p>
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span class="year">2026</span> Returns to Effort and Growth Mindset</span>
+      <span><a href="mailto:contact@example.com">contact@example.com</a></span>
+    </div>
+  </footer>
+ 
+  <script src="site.js"></script>
+</body>
+</html>
+ 
+Claude ha terminado la respuesta
