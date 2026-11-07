@@ -5,7 +5,7 @@
    Las fuentes se cargan aquí mismo, no hace falta tocar el HTML.
    ========================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,wght@0,300..600;1,300..600&display=swap");
 
 :root {
   --navy: #10264a;           /* azul noche: portada, tarjetas y pie */
@@ -22,9 +22,10 @@
   --border: #ecdcc2;
   --radius: 18px;
   --max: 1080px;
-  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-serif: var(--font-display); /* alias por compatibilidad */
+  --font-sans: "Familjen Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;  /* texto y títulos */
+  --font-display: var(--font-sans);
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;   /* palabras en cursiva */
+  --font-mono: "DM Mono", ui-monospace, "SF Mono", Menlo, monospace; /* etiquetas pequeñas */
 }
 
 * { box-sizing: border-box; }
@@ -79,7 +80,7 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoratio
   align-items: center;
   gap: 10px;
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: -0.01em;
   color: var(--navy);
@@ -151,10 +152,11 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoratio
 
 .eyebrow {
   display: inline-block;
+  font-family: var(--font-mono);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.75rem;
-  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.74rem;
+  font-weight: 500;
   color: var(--navy);
   background: var(--sun);
   border-radius: 999px;
@@ -164,7 +166,7 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoratio
 
 .hero h1 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(2.5rem, 6.5vw, 4.5rem);
   line-height: 1.04;
   letter-spacing: -0.025em;
@@ -174,7 +176,9 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoratio
 }
 /* palabra destacada opcional: <em>effort</em> */
 .hero h1 em {
+  font-family: var(--font-serif);
   font-style: italic;
+  font-weight: 500;
   color: var(--coral);
 }
 
@@ -220,10 +224,10 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoratio
   animation: marquee 30s linear infinite;
 }
 .marquee-track span {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   white-space: nowrap;
 }
 .marquee-track span::after { content: "✦"; margin-left: 40px; color: var(--sun); font-style: normal; }
@@ -260,7 +264,7 @@ section { padding: 68px 0 8px; }
 
 h2 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.2rem;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -281,8 +285,9 @@ h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; lin
 
 /* etiqueta numerada opcional: <p class="section-label">01 ↘ Overview</p> */
 .section-label {
-  font-weight: 700;
-  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--coral-dark);
@@ -379,18 +384,18 @@ h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; lin
 .news-item:last-child { border-bottom: none; }
 .news-item time {
   color: var(--coral-dark);
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.85rem;
   padding-top: 1px;
 }
 .news-item p { margin: 4px 0 0; color: var(--muted); }
 
 .tag {
   display: inline-block;
-  font-size: 0.74rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
   padding: 2px 11px;
   border-radius: 999px;
   background: var(--teal);
@@ -402,10 +407,10 @@ h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; lin
 /* ---------- Publicaciones ---------- */
 
 .pub-year {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 600;
-  font-size: 1.9rem;
+  font-weight: 500;
+  font-size: 2rem;
   margin: 44px 0 8px;
   color: var(--coral-dark);
 }
