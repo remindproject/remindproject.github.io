@@ -3,22 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Returns to Effort and Growth Mindset · Publications</title>
-  <meta name="description" content="Publications from Returns to Effort and Growth Mindset, a research project hosted at Universidad Carlos III de Madrid (UC3M).">
+  <title>Returns to Effort and Growth Mindset · Contact us</title>
+  <meta name="description" content="Contact Returns to Effort and Growth Mindset, a research project hosted at Universidad Carlos III de Madrid (UC3M).">
   <link rel="icon" href="images/newlogo.png" type="image/png">
   <link rel="stylesheet" href="site.css">
   <style>
-    .soon {
-      margin: clamp(2.5rem, 6vw, 4rem) 0;
-      padding: clamp(2.5rem, 7vw, 4.5rem) 1.5rem;
-      text-align: center;
+    .contact-box {
+      margin: clamp(2rem, 5vw, 3.5rem) 0;
+      padding: clamp(1.5rem, 5vw, 2.5rem);
       background: var(--panel-bg);
       border-radius: var(--radius);
+      max-width: 640px;
     }
-    .soon .icon { font-size: 2.4rem; margin-bottom: 0.8rem; }
-    .soon h2 { margin-bottom: 0.6rem; }
-    .soon h2::after { margin-inline: auto; }
-    .soon p { margin: 0 auto; max-width: 44ch; color: var(--ink-2); }
+    .contact-box > p { margin: 0 0 1.5rem; color: var(--ink-2); }
+    .contact-form .field { margin-bottom: 1.1rem; }
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      font: inherit;
+      color: inherit;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .contact-form textarea { min-height: 160px; resize: vertical; }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    .contact-form button {
+      padding: 0.75rem 1.6rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      background: var(--accent);
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .contact-form button:hover { opacity: 0.9; }
+    /* Campo trampa anti-spam: debe permanecer oculto */
+    .contact-form .hp { display: none; }
   </style>
 </head>
 <body>
@@ -35,7 +71,7 @@
           <li><a href="index.html">About the project</a></li>
           <li><a href="team.html">Team members</a></li>
           <li><a href="news.html">News</a></li>
-          <li><a href="publications.html">Publications</a></li>
+          <li><a href="publications.html">Contact us</a></li>
         </ul>
       </nav>
     </div>
@@ -44,15 +80,39 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <h1>Publications</h1>
+        <h1>Contact us</h1>
       </div>
     </div>
 
     <div class="container">
-      <div class="soon">
-        <div class="icon">🚧</div>
-        <h2>Under construction</h2>
-        <p>We're still working on this page. Check back soon!</p>
+      <div class="contact-box">
+        <p>Have a question or want to get in touch with the team? Send us a message and we'll get back to you.</p>
+
+        <form class="contact-form" action="https://formsubmit.co/remind.proyecto@uc3m.es" method="POST">
+          <div class="field">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="name@example.com">
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="Subject" required placeholder="What is your inquiry about?">
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+          </div>
+
+          <!-- Configuración de FormSubmit -->
+          <input type="hidden" name="_subject" value="New message from the project website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <!-- Anti-spam (campo trampa) -->
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+          <button type="submit">Send message</button>
+        </form>
       </div>
     </div>
   </main>
