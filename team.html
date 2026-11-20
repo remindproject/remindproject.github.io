@@ -14,10 +14,7 @@
     /* Barra superior: solo el menú, a la derecha */
     .header-inner { justify-content: flex-end; }
 
-    /* Cartel de financiación con el texto centrado */
-    .funding { text-align: center; justify-content: center; align-items: center; }
-
-    /* Pie: © y correo apilados a la izquierda; solo los logos a la derecha */
+    /* Pie: © y correo apilados a la izquierda; a la derecha, los logos y debajo el texto de financiación */
     .footer-main {
       display: flex;
       align-items: center;
@@ -26,11 +23,29 @@
       padding-block: 1.2rem;
     }
     .footer-left { display: flex; flex-direction: column; gap: 0.35rem; }
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.9rem;
+      flex: 0 1 auto;
+    }
     .footer-logos { display: flex; align-items: center; gap: 1.4rem; flex: 0 0 auto; }
     .footer-logos img { height: 64px; width: auto; display: block; }
+    .footer-funding {
+      margin: 0;
+      max-width: 38rem;
+      text-align: right;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--ink-2);
+    }
+    .footer-funding strong { font-weight: 600; color: var(--ink); }
     @media (max-width: 700px) {
       .footer-main { flex-direction: column; align-items: flex-start; }
+      .footer-right { align-items: flex-start; }
       .footer-logos img { height: 48px; }
+      .footer-funding { text-align: left; }
     }
     .team-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
     /* Foto circular con borde blanco para que se vea sobre el fondo verde de la tarjeta */
@@ -208,13 +223,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ===== FINANCIACIÓN (obligatoria): referencia del proyecto, mismo cartel que en el index ===== -->
-      <section>
-        <div class="funding">
-          <span>Project <strong>PID2025-174642NB-I00</strong> funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> / <strong>Agencia Estatal de Investigación</strong> / 10.13039/501100011033.</span>
-        </div>
-      </section>
     </div>
   </main>
 
@@ -224,10 +232,13 @@
         <span>© <span class="year">2026</span> Returns to Effort and Growth Mindset</span>
         <span class="footer-email"><a href="mailto:remind.proyecto@uc3m.es">remind.proyecto@uc3m.es</a></span>
       </div>
-      <div class="footer-logos">
-        <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
-        <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
-        <img src="images/ijl.png" alt="Instituto Juan Linz">
+      <div class="footer-right">
+        <div class="footer-logos">
+          <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
+          <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
+          <img src="images/ijl.png" alt="Instituto Juan Linz">
+        </div>
+        <p class="footer-funding">Project <strong>PID2025-174642NB-I00</strong> funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> / <strong>Agencia Estatal de Investigación</strong> / 10.13039/501100011033.</p>
       </div>
     </div>
   </footer>
