@@ -18,6 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
   <style>
+    /* Menú alineado a la derecha al no haber logo/nombre */
+    .header-inner { justify-content: flex-end; }
+
     /* Barra de financiación (MICIU + AEI) */
     .funding-bar { background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .funding-bar-inner {
@@ -43,10 +46,6 @@
   <!-- ===== CABECERA (igual en todas las páginas) ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="images/newlogo.png" alt="Project logo">
-        <span>Returns to Effort and Growth Mindset</span>
-      </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav">
         <ul>
@@ -62,7 +61,7 @@
   <!-- ===== FINANCIACIÓN (obligatoria en todas las páginas): referencia + logo MICIU + logo AEI ===== -->
   <div class="funding-bar">
     <div class="container funding-bar-inner">
-      <p>Project <strong>PID2025-174642NB-I00</strong> funded by <strong>MICIU/AEI/10.13039/501100011033</strong></p>
+      <p>Project <strong>PID2025-174642NB-I00</strong> funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> (MICIU) / <strong>Agencia Estatal de Investigación</strong> (AEI) / 10.13039/501100011033</p>
       <div class="funding-logos">
         <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
         <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
