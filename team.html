@@ -17,18 +17,19 @@
     /* Cartel de financiación con el texto centrado */
     .funding { text-align: center; justify-content: center; align-items: center; }
 
-    /* Pie: logos arriba a la derecha; correo abajo a la izquierda, © a la derecha */
-    .footer-logos {
+    /* Pie: © y correo apilados a la izquierda; solo los logos a la derecha */
+    .footer-main {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      gap: 1.4rem;
-      padding-block: 1.2rem 0.6rem;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      padding-block: 1.2rem;
     }
+    .footer-left { display: flex; flex-direction: column; gap: 0.35rem; }
+    .footer-logos { display: flex; align-items: center; gap: 1.4rem; flex: 0 0 auto; }
     .footer-logos img { height: 64px; width: auto; display: block; }
-    .footer-inner { justify-content: space-between; }
     @media (max-width: 700px) {
-      .footer-logos { justify-content: flex-start; }
+      .footer-main { flex-direction: column; align-items: flex-start; }
       .footer-logos img { height: 48px; }
     }
     .team-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
@@ -218,13 +219,15 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-logos">
-      <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
-      <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
-    </div>
-    <div class="container footer-inner">
-      <span class="footer-email"><a href="mailto:remind.proyecto@uc3m.es">remind.proyecto@uc3m.es</a></span>
-      <span>© <span class="year">2026</span> Returns to Effort and Growth Mindset</span>
+    <div class="container footer-main">
+      <div class="footer-left">
+        <span>© <span class="year">2026</span> Returns to Effort and Growth Mindset</span>
+        <span class="footer-email"><a href="mailto:remind.proyecto@uc3m.es">remind.proyecto@uc3m.es</a></span>
+      </div>
+      <div class="footer-logos">
+        <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
+        <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
+      </div>
     </div>
   </footer>
 
