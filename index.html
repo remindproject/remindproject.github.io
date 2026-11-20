@@ -18,33 +18,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
   <style>
-    /* Menú alineado a la derecha al no haber logo/nombre */
-    .header-inner { justify-content: flex-end; }
+    /* Barra superior: logos a la izquierda, menú a la derecha */
+    .header-inner { justify-content: space-between; gap: 1rem; }
+    .funding-logos { display: flex; align-items: center; gap: 1rem; flex: 0 0 auto; }
+    .funding-logos img { height: 40px; width: auto; display: block; }
 
-    /* Barra de financiación (MICIU + AEI): texto a la izquierda, logos a la derecha */
+    /* Barra de financiación: una sola línea de texto, a la izquierda */
     .funding-bar { background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .funding-bar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem 2rem;
-      padding-block: 0.7rem;
+    .funding-bar-inner { padding-block: 0.55rem; }
+    .funding-bar p { margin: 0; text-align: left; font-size: 0.85rem; line-height: 1.4; color: var(--ink-2); }
+    @media (min-width: 1000px) {
+      .funding-bar p { white-space: nowrap; }
     }
-    .funding-bar p {
-      flex: 1 1 0;
-      min-width: 0;
-      margin: 0;
-      text-align: left;
-      font-size: 0.9rem;
-      line-height: 1.45;
-      color: var(--ink-2);
-    }
-    .funding-logos { display: flex; align-items: center; gap: 1.2rem; flex: 0 0 auto; margin-left: auto; }
-    .funding-bar img { height: 44px; width: auto; display: block; }
     @media (max-width: 700px) {
-      .funding-bar-inner { flex-direction: column; align-items: flex-start; }
-      .funding-logos { margin-left: 0; gap: 0.8rem; }
-      .funding-bar img { height: 34px; }
+      .funding-logos { gap: 0.6rem; }
+      .funding-logos img { height: 30px; }
     }
   </style>
 </head>
@@ -53,6 +41,10 @@
   <!-- ===== CABECERA (igual en todas las páginas) ===== -->
   <header class="site-header">
     <div class="container header-inner">
+    <div class="funding-logos">
+      <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
+      <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
+    </div>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav">
         <ul>
@@ -68,15 +60,7 @@
   <!-- ===== FINANCIACIÓN (obligatoria en todas las páginas): referencia + logo MICIU + logo AEI ===== -->
   <div class="funding-bar">
     <div class="container funding-bar-inner">
-      <p>
-        Project <strong>PID2025-174642NB-I00</strong><br>
-        funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> /
-        <strong>Agencia Estatal de Investigación</strong> / 10.13039/501100011033
-      </p>
-      <div class="funding-logos">
-        <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
-        <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
-      </div>
+      <p>Project <strong>PID2025-174642NB-I00</strong> funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> / <strong>Agencia Estatal de Investigación</strong> / 10.13039/501100011033</p>
     </div>
   </div>
 
