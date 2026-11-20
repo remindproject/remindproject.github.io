@@ -11,23 +11,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
   <style>
-    /* Barra de financiación (MICIU + AEI) */
-    .funding-bar { background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .funding-bar-inner {
+    /* Financiación (MICIU + AEI) en el pie: texto a la izquierda, logos a la derecha */
+    .footer-funding {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem 2rem;
-      flex-wrap: wrap;
-      padding-block: 0.6rem;
+      padding-block: 1.2rem;
+      margin-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.35);
     }
-    .funding-bar p { margin: 0; font-size: 0.9rem; color: var(--ink-2); }
-    .funding-logos { display: flex; align-items: center; gap: 1.2rem; flex-wrap: nowrap; }
-    .funding-bar img { height: 44px; width: auto; max-width: 100%; display: block; }
-    @media (max-width: 600px) {
-      .funding-bar-inner { justify-content: center; text-align: center; }
-      .funding-logos { gap: 0.8rem; }
-      .funding-bar img { height: 32px; }
+    .footer-funding p { flex: 1 1 0; min-width: 0; margin: 0; text-align: left; font-size: 0.88rem; line-height: 1.5; }
+    .footer-funding .funding-logos {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex: 0 0 auto;
+      padding: 0.45rem 0.8rem;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .footer-funding .funding-logos img { height: 48px; width: auto; display: block; }
+    @media (max-width: 700px) {
+      .footer-funding { flex-direction: column; align-items: flex-start; }
+      .footer-funding .funding-logos img { height: 38px; }
     }
     .team-grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
     /* Foto circular con borde blanco para que se vea sobre el fondo verde de la tarjeta */
@@ -67,17 +74,6 @@
       </nav>
     </div>
   </header>
-
-  <!-- ===== FINANCIACIÓN (obligatoria en todas las páginas): referencia + logo MICIU + logo AEI ===== -->
-  <div class="funding-bar">
-    <div class="container funding-bar-inner">
-      <p>Project <strong>PID2025-174642NB-I00</strong> funded by <strong>MICIU/AEI/10.13039/501100011033</strong></p>
-      <div class="funding-logos">
-        <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
-        <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
-      </div>
-    </div>
-  </div>
 
   <main>
     <div class="page-header">
@@ -224,6 +220,16 @@
   </main>
 
   <footer class="site-footer">
+    <!-- ===== FINANCIACIÓN (obligatoria): referencia + logo MICIU + logo AEI ===== -->
+    <div class="container footer-funding">
+      <p>Project <strong>PID2025-174642NB-I00</strong><br>
+        funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> /
+        <strong>Agencia Estatal de Investigación</strong> / 10.13039/501100011033</p>
+      <div class="funding-logos">
+        <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
+        <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
+      </div>
+    </div>
     <div class="container footer-inner">
       <span>© <span class="year">2026</span> Returns to Effort and Growth Mindset</span>
       <span class="footer-email"><a href="mailto:remind.proyecto@uc3m.es">remind.proyecto@uc3m.es</a></span>
