@@ -21,23 +21,30 @@
     /* Menú alineado a la derecha al no haber logo/nombre */
     .header-inner { justify-content: flex-end; }
 
-    /* Barra de financiación (MICIU + AEI) */
+    /* Barra de financiación (MICIU + AEI): texto a la izquierda, logos a la derecha */
     .funding-bar { background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .funding-bar-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem 2rem;
-      flex-wrap: wrap;
-      padding-block: 0.6rem;
+      padding-block: 0.7rem;
     }
-    .funding-bar p { margin: 0; font-size: 0.9rem; color: var(--ink-2); }
-    .funding-logos { display: flex; align-items: center; gap: 1.2rem; flex-wrap: nowrap; }
-    .funding-bar img { height: 44px; width: auto; max-width: 100%; display: block; }
-    @media (max-width: 600px) {
-      .funding-bar-inner { justify-content: center; text-align: center; }
-      .funding-logos { gap: 0.8rem; }
-      .funding-bar img { height: 32px; }
+    .funding-bar p {
+      flex: 1 1 0;
+      min-width: 0;
+      margin: 0;
+      text-align: left;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: var(--ink-2);
+    }
+    .funding-logos { display: flex; align-items: center; gap: 1.2rem; flex: 0 0 auto; margin-left: auto; }
+    .funding-bar img { height: 44px; width: auto; display: block; }
+    @media (max-width: 700px) {
+      .funding-bar-inner { flex-direction: column; align-items: flex-start; }
+      .funding-logos { margin-left: 0; gap: 0.8rem; }
+      .funding-bar img { height: 34px; }
     }
   </style>
 </head>
@@ -61,7 +68,11 @@
   <!-- ===== FINANCIACIÓN (obligatoria en todas las páginas): referencia + logo MICIU + logo AEI ===== -->
   <div class="funding-bar">
     <div class="container funding-bar-inner">
-      <p>Project <strong>PID2025-174642NB-I00</strong> funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> (MICIU) / <strong>Agencia Estatal de Investigación</strong> (AEI) / 10.13039/501100011033</p>
+      <p>
+        Project <strong>PID2025-174642NB-I00</strong><br>
+        funded by <strong>Ministerio de Ciencia, Innovación y Universidades</strong> /
+        <strong>Agencia Estatal de Investigación</strong> / 10.13039/501100011033
+      </p>
       <div class="funding-logos">
         <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
         <img src="images/acronimo_nombre3l(1).png" alt="Institutional logo">
