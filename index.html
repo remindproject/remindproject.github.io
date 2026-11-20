@@ -22,6 +22,7 @@
     .header-inner { justify-content: space-between; gap: 1rem; }
     .funding-logos { display: flex; align-items: center; gap: 1.2rem; flex: 0 0 auto; }
     .funding-logos img { height: 56px; width: auto; display: block; }
+    .funding-logos img:nth-child(n+2) { height: 38px; }
 
     /* Barra de financiación: una sola línea de texto, a la izquierda */
     .funding-bar { background: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -33,6 +34,7 @@
     @media (max-width: 700px) {
       .funding-logos { gap: 0.6rem; }
       .funding-logos img { height: 42px; }
+      .funding-logos img:nth-child(n+2) { height: 30px; }
     }
   </style>
 </head>
@@ -44,7 +46,7 @@
     <div class="funding-logos">
       <img src="images/MICIU+AEI.jpg" alt="Ministerio de Ciencia, Innovación y Universidades · Agencia Estatal de Investigación">
       <img src="images/uc3macronimo.png" alt="Universidad Carlos III de Madrid">
-      <img src="images/IJL_letras.jpg" alt="Instituto Juan Linz">
+      <img src="images/IJL_letras.png" alt="Instituto Juan Linz">
     </div>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav">
